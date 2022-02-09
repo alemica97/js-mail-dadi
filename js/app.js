@@ -1,12 +1,36 @@
 // -------------------------MAIL--------------------------------
 
-//creo una lista di email
+//creo una lista di email dentro un Array
+const emailList = [
+    'ale.mic@gmail.com',
+    'ciccio08@hotmail.it',
+    'ooook@gmail.com',
+    'alessandro.micalizzi08@gmail.com',
+    'qwerty.wasd@hotmail.it'
+];
+//stampo l'arrey che contiene le email in console
+console.log(emailList);
 
 //chiedo all'utente la sua email
+const userEmail = prompt('Ciao, qual è la tua email?');
+console.log(userEmail);
 
-//SE l'email è corretta stampo un messaggio positivo
+/*faccio un ciclo for che scorre le email all'interno dell'arrey e le confronta 
+con quella inserita dall'utente per vedere se è presente*/
+for (let i = 0; i < emailList.length; i++){
+    const el = emailList[i];
+    console.log(el);
+    //SE l'email è corretta stampo un messaggio positivo
+    if(userEmail === el){
+        alert('email-corretta');
+    //ALTRIMENTI stampo un messaggio d'errore
+    }else{
+        alert('Attenzione! Ricarica la pagina ed inserisci una email corretta');
+        break;
+    }
+}
 
-//ALTRIMENTI stampo un messaggio d'errore
+
 
 
 
