@@ -19,7 +19,7 @@ emailButton.addEventListener('click', function(){
     console.log(emailList);
 
     //chiedo all'utente la sua email
-    let userEmail = prompt('Ciao, qual è la tua email?');
+    let userEmail = prompt('Qual è la tua email?');
     console.log(userEmail);
 
     /*faccio un ciclo for che scorre le email all'interno dell'arrey e le confronta 
@@ -39,12 +39,10 @@ emailButton.addEventListener('click', function(){
     }
     //faccio così altrimenti darebbe un errore ad ogni iterazione del ciclo
     if(userEmail !== el){
-        alert('Email errata! premi il pulsante per riprovare');
+        alert('Email errata! Premi il pulsante arancione per riprovare');
     }
+
 });
-
-
-
 
 // -----------------------------DADI------------------------------
 

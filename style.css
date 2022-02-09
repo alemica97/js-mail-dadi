@@ -29,6 +29,17 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.6);
+    /* animation: 1s ease-in 1 linear ; */
+    animation: 1s ease-in 1 zoom;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0.1, 0.1);
+    }
+    to{
+        transform: scale(1, 1);
+    }
 }
 
 #mail-button{
