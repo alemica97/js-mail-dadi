@@ -23,9 +23,35 @@ body{
 .btn{
     border: none;
     border-radius: 25px;
-    padding: 40px 80px;
+    flex-basis: 400px;
+    padding: 50px 0;
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.6);
+}
+
+#mail-button{
+    background-color: chocolate;
+    color: rgb(253, 246, 237);
+}
+
+#dadi-button{
+    background-color: deepskyblue;
+    color: rgb(233, 250, 255);
+}
+
+#mail-button:hover{
+    background-color: rgb(224, 137, 75);
+}
+
+#dadi-button:hover{
+    background-color: rgb(91, 213, 253);
+}
+
+#mail-button:hover,
+#dadi-button:hover{
+    cursor: pointer;
+    color: rgb(97, 97, 97);
+    transition: all 500ms;
 }
